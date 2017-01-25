@@ -1,0 +1,7 @@
+<div class="Results">
+    <h1>Results</h1>
+    <h2>Searched: {{ query }}</h2>
+    <template v-for="item in results">
+        <image-thumb :item.sync="item"></image-thumb>
+    </template>
+</div>
