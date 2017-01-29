@@ -1,0 +1,18 @@
+<div class="Search container">
+    <div class="row">
+        <div class="row">
+            <img src="resources/logo.jpg" class="img-responsive center-block" alt="logo" >
+        </div>
+        <div class="input-group input-group-lg col-xs-8 center-block" :class="{'has-error':error}">
+            <input type="text" class="form-control" placeholder="Search..." v-model="query" @keyup.13="search">
+            <div class="input-group-btn">
+                <a @click="search" class="btn btn-success btn-lg">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </a>
+
+                <!-- Advanced Search -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Advanced Search</button>
+            </div>
+        </div>
+    </div>
+</div>

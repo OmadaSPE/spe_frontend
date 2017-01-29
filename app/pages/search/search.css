@@ -1,0 +1,17 @@
+.Search
+.btn-success,
+.Search
+.btn-primary {
+    background-color: #ffffff;
+    border: 2px solid #bdc3c7;
+    color: #bdc3c7;
+    margin-left: -3px !important;
+    border-left-width: 0;
+}
+
+
+.Search
+.has-error
+input {
+    z-index: 3;
+}

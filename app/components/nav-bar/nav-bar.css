@@ -1,0 +1,28 @@
+.Navbar
+.navbar-brand {
+    padding: 0;
+    height: 100%;
+    padding: 5px;
+}
+
+.Navbar
+.navbar-brand
+img {
+    height: 50px;
+}
+
+.Navbar
+.navbar-form {
+    padding: 9px;
+}
+
+.Navbar
+.nav
+a {
+    padding: 16px 20px !important;
+}
+
+.Navbar
+.navbar-fixed-top {
+    border-radius: 0 !important;
+}

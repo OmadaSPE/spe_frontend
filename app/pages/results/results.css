@@ -1,0 +1,12 @@
+.Results
+.loading-results,
+.Results
+.no-results{
+    text-align: center;
+}
+
+.Results
+.center-block {
+    float: none;
+    text-align: center;
+}

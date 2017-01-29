@@ -16,11 +16,15 @@ System.config({
   map: {
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
+    "bootstrap": "github:twbs/bootstrap@3.3.7",
     "core-js": "npm:core-js@1.2.7",
     "css": "github:systemjs/plugin-css@0.1.32",
+    "flat-ui": "npm:flat-ui@2.1.1",
+    "font-awesome": "npm:font-awesome@4.7.0",
     "text": "github:systemjs/plugin-text@0.0.9",
     "vue": "npm:vue@2.0.7",
     "vue-resource": "npm:vue-resource@1.0.3",
+    "vue-router": "npm:vue-router@2.1.3",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },
@@ -38,6 +42,9 @@ System.config({
     },
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
+    },
+    "github:twbs/bootstrap@3.3.7": {
+      "jquery": "npm:jquery@3.1.1"
     },
     "npm:assert@1.4.1": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
@@ -62,6 +69,12 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
+    "npm:flat-ui@2.1.1": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:font-awesome@4.7.0": {
+      "css": "github:systemjs/plugin-css@0.1.32"
+    },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
@@ -79,6 +92,9 @@ System.config({
     },
     "npm:vm-browserify@0.0.4": {
       "indexof": "npm:indexof@0.0.1"
+    },
+    "npm:vue-router@2.1.3": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:vue@2.0.7": {
       "process": "github:jspm/nodelibs-process@0.1.2"

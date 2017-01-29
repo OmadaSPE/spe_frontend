@@ -1,0 +1,18 @@
+.Item {
+    padding-top: 60px !important;
+}
+
+.Item
+.no-pad{
+    padding: 0 !important;
+}
+
+.Item
+img.lib-img-show {
+    width: 100%;
+}
+
+.Results
+.loading-item {
+    text-align: center;
+}

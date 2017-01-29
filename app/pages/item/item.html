@@ -1,0 +1,44 @@
+<div class="Item container">
+    <hr>
+    <template v-if="item">
+        <div class="row row-margin-bottom">
+            <div class="no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-md-4 no-pad">
+                            <img class="lib-img-show" :src="'resources/'+item.media_id+'.jpg'">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="lib-row lib-header">
+                                {{item.description}}
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            <h3>
+                Tags
+            </h3>
+            <div class="tags">
+                <template v-for="tag in item.tags">
+                    <router-link :to="tag_url(tag.tag_name)" class="primary">{{tag.tag_name}}</router-link>
+                </template>
+            </div>
+        </div>
+
+        <a href="" class="btn btn-lg btn-primary"><span class=""></span> Edit</a>
+        <a href="" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-cloud-download"></span> Download</a>
+    </template>
+
+    <div class="loading-item" v-else>
+        <h3>Loading...</h3>
+    </div>
+</div>
