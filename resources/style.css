@@ -1,65 +1,65 @@
 @import url(http://fonts.googleapis.com/css?family=Antic+Slab);
 
 html,body {
-height:100%;
+    height:100%;
 }
 
 h1 {
-font-family: 'Antic Slab', serif;
-font-size:80px;
-color:#DDCCEE;
+    font-family: 'Antic Slab', serif;
+    font-size:80px;
+    color:#DDCCEE;
 }
 
 .lead {
-color:#DDCCEE;
+    color:#DDCCEE;
 }
 
 
 /* Custom container */
 .app
 .container-full {
-margin: 0 auto;
-width: 100%;
-min-height:100%;
-background-color:#edeef0;
-overflow:hidden;
+    margin: 0 auto;
+    width: 100%;
+    min-height:100%;
+    background-color:#edeef0;
+    overflow:hidden;
 }
 
 .app
 .container-full a {
-color:#efefef;
-text-decoration:none;
+    color:#efefef;
+    text-decoration:none;
 }
 
 .app
 .v-center {
-margin-top:3%;
-margin-bottom: 1%;
+    margin-top:3%;
+    margin-bottom: 1%;
 }
 
 /*
 @media (min-width: 992px) {
-  .modal-lg {
-    width: 1200px;
-  }
+.modal-lg {
+width: 1200px;
+}
 }
 */
 
 .app
 .modal-dialog {
-width: 1000px;
-margin: 30px auto;
-  }
+    width: 1000px;
+    margin: 30px auto;
+}
 
 .app
 .modal-body {
-height: 450px;
+    height: 450px;
 }
 
 .app
 .input-group-addon {
-width: 150px;
-background-color: #337AB7;
+    width: 150px;
+    background-color: #eaeaea;
 }
 /*
 .app
@@ -69,8 +69,8 @@ padding: 6px 100px;
 
 .app
 .input-group {
-margin-bottom: 5px;
-margin-top: 20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
 }
 
 
@@ -96,121 +96,121 @@ margin-top: 20px;
 }
 /*BUTTON COLORS OVERIDE
 .btn-primary {
-    color: #fff;
-    background: #0086a1;
-    background-image: -webkit-linear-gradient(top, #0086a1, #00738a);
-    background-image: -moz-linear-gradient(top, #0086a1, #00738a);
-    background-image: -ms-linear-gradient(top, #0086a1, #00738a);
-    background-image: -o-linear-gradient(top, #0086a1, #00738a);
-    background-image: linear-gradient(to bottom, #0086a1, #00738a);
-    border: 1px solid #0085a1;
-    border-radius: 3px;
-    -webkit-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    -kthtml-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+color: #fff;
+background: #0086a1;
+background-image: -webkit-linear-gradient(top, #0086a1, #00738a);
+background-image: -moz-linear-gradient(top, #0086a1, #00738a);
+background-image: -ms-linear-gradient(top, #0086a1, #00738a);
+background-image: -o-linear-gradient(top, #0086a1, #00738a);
+background-image: linear-gradient(to bottom, #0086a1, #00738a);
+border: 1px solid #0085a1;
+border-radius: 3px;
+-webkit-transition: all 0.3s linear;
+-o-transition: all 0.3s linear;
+-moz-transition: all 0.3s linear;
+-ms-transition: all 0.3s linear;
+-kthtml-transition: all 0.3s linear;
+transition: all 0.3s linear;
 }*/
 
 @media only screen and (max-width: 768px) {
     .app
     .buscador-principal {
-		display: block;
-	}
+        display: block;
+    }
     .app
-	.buscador-principal button{
-		width: 100%;
-	}
+    .buscador-principal button{
+        width: 100%;
+    }
     .app
-	.claim-container {
-		font-size: 20px;
-		display: none;
-	}
+    .claim-container {
+        font-size: 20px;
+        display: none;
+    }
 }
 
 .app
 .behclick-panel  .list-group {
-  margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 .app
 .behclick-panel .list-group-item:first-child {
-border-top-left-radius:0px;
-border-top-right-radius:0px;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
 }
 .app
 .behclick-panel .list-group-item {
-border-right:0px;
-border-left:0px;
+    border-right:0px;
+    border-left:0px;
 }
 .app
 .behclick-panel .list-group-item:last-child{
-border-bottom-right-radius:0px;
-border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+    border-bottom-left-radius:0px;
 }
 .app
 .behclick-panel .list-group-item {
-padding: 5px;
+    padding: 5px;
 }
 .app
 .behclick-panel .panel-heading {
-/* 				padding: 10px 15px;
-                      border-bottom: 1px solid transparent; */
-border-top-right-radius: 0px;
-border-top-left-radius: 0px;
-border-bottom: 1px solid darkslategrey;
+    /* 				padding: 10px 15px;
+    border-bottom: 1px solid transparent; */
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom: 1px solid darkslategrey;
 }
 .app
 .behclick-panel .panel-heading:last-child{
-/* border-bottom: 0px; */
+    /* border-bottom: 0px; */
 }
 .app
 .behclick-panel {
-border-radius: 0px;
-border-right: 0px;
-border-left: 0px;
-border-bottom: 0px;
-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
 .app
 .behclick-panel .radio, .checkbox {
-margin: 0px;
-padding-left: 10px;
+    margin: 0px;
+    padding-left: 10px;
 }
 .app
 .behclick-panel .panel-title > a, .panel-title > small, .panel-title > .small, .panel-title > small > a, .panel-title > .small > a {
-outline: none;
+    outline: none;
 }
 .app
 .behclick-panel .panel-body > .panel-heading{
-padding:10px 10px;
+    padding:10px 10px;
 }
 .app
 .behclick-panel .panel-body {
-padding: 0px;
+    padding: 0px;
 }
 /* unvisited link */
 .app
 .behclick-panel a:link {
-  text-decoration:none;
+    text-decoration:none;
 }
 
 /* visited link */
 .app
 .behclick-panel a:visited {
-  text-decoration:none;
+    text-decoration:none;
 }
 
 /* mouse over link */
 .app
 .behclick-panel a:hover {
-  text-decoration:none;
+    text-decoration:none;
 }
 
 /* selected link */
 .app
 .behclick-panel a:active {
-  text-decoration:none;
+    text-decoration:none;
 }
 
 .app
@@ -219,65 +219,67 @@ padding: 0px;
 }
 
 /* ===========
-   Gallery
- =============*/
- .app
+Gallery
+=============*/
+.app
 .portfolioFilter a {
-  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.3s ease-out;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
-  color: #333333;
-  padding: 5px 10px;
-  display: inline-block;
-  transition: all 0.3s ease-out;
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.3s ease-out;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    color: #333333;
+    padding: 5px 10px;
+    display: inline-block;
+    transition: all 0.3s ease-out;
 }
 .app
 .portfolioFilter a:hover {
-  background-color: #228bdf;
-  color: #ffffff;
+    background-color: #228bdf;
+    color: #ffffff;
 }
 .app
 .portfolioFilter a.current {
-  background-color: #228bdf;
-  color: #ffffff;
+    background-color: #228bdf;
+    color: #ffffff;
 }
 .app
 .thumb {
-  background-color: #ffffff;
-  border-radius: 3px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  width: 100%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 100%;
 }
 .app
 .thumb-img {
-  border-radius: 2px;
-  overflow: hidden;
-  width: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 .app
 .gal-detail h4 {
-  margin: 16px auto 10px auto;
-  width: 80%;
-  white-space: nowrap;
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    margin: 16px auto 10px auto;
+    width: 80%;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .app
 .gal-detail .ga-border {
-  height: 3px;
-  width: 40px;
-  background-color: #228bdf;
-  margin: 10px auto;
+    height: 3px;
+    width: 40px;
+    background-color: #228bdf;
+    margin: 10px auto;
 }
 
 /*******************/
@@ -351,6 +353,7 @@ padding: 0px;
     height: 100%;
     display: block;
     font-size: 13px;
+    white-space: pre-wrap;
 }
 
 .app

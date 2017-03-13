@@ -15,47 +15,55 @@
                     <!-- Title -->
                     <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">Title</span>
-                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2" v-model="title">
                     </div>
 
                     <!-- Media Type -->
-                    <div class="input-group">
+                    <!-- <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">Media Type</span>
-                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2" v-model="title">
                         <div class="input-group-btn">
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></button>
                             <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="#">Image</a></li>
-                                <li><a href="#">Video</a></li>
-                                <li><a href="#">Audio</a></li>
+                                <li><a>Image</a></li>
+                                <li><a>Video</a></li>
+                                <li><a>Audio</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <!-- Mime Format -->
                     <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">Mime Format</span>
-                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2" v-model="mimeformat">
                     </div>
+
+                    <!-- Department -->
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon2">Department</span>
+                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2" v-model="department">
+                    </div>
+
+
 
                     <!-- Creator -->
-                    <div class="input-group">
+                    <!-- <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">Creator</span>
                         <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
-                    </div>
+                    </div> -->
 
                     <!-- Publisher-->
-                    <div class="input-group">
+                    <!-- <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">Publisher</span>
                         <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
-                    </div>
+                    </div> -->
 
                     <!-- Language-->
-                    <div class="input-group">
+                    <!-- <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">Language</span>
                         <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
-                    </div>
+                    </div> -->
 
                 </div> <!-- LeftDiv-->
 
@@ -63,34 +71,40 @@
                 <div id = "rightDiv-modal">
 
                     <!-- Date -->
-                    <div class="input-group">
+                    <!-- <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">Date</span>
                         <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
-                    </div>
+                    </div> -->
 
                     <!-- Subjects-->
                     <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">Subjects</span>
-                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2" v-model="subjects">
                     </div>
 
                     <!-- Description-->
                     <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">Description</span>
-                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2" v-model="description">
                     </div>
 
                     <!-- Notes-->
                     <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">Notes</span>
-                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
+                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2" v-model="notes">
+                    </div>
+
+                    <!-- Taxonomy -->
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon2">Taxonomy</span>
+                        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2" v-model="taxonomy">
                     </div>
 
                     <!-- File Keyword-->
-                    <div class="input-group">
+                    <!-- <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">File Keyword</span>
                         <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon2">
-                    </div>
+                    </div> -->
 
                 </div> <!-- RightDiv -->
 
@@ -98,7 +112,7 @@
 
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <a href ="results.html"><button type="button" class="btn btn-primary">Search</button></a>
+                <a><button type="button" class="btn btn-primary" @click="go" data-dismiss="modal">Search</button></a>
             </div>
         </div>
     </div>

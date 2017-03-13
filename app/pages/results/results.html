@@ -166,9 +166,9 @@
                 <div class=" col-md-3 webdesign illustrator" v-for="item in results">
                     <div class="gal-detail thumb">
                         <router-link :to="'item/'+item.id" class="image-popup" title="Screenshot-1">
-                            <img :src="'resources/'+item.media_id+'.jpg'" class="thumb-img" alt="work-thumbnail">
+                            <img :src="'http://museums.bristol.gov.uk/multimedia/entry.php?request=resource&width=200&format=jpeg&irn='+item.media_id" class="thumb-img" alt="work-thumbnail">
                         </router-link>
-                        <h4 class="text-center">Image</h4>
+                        <h4 class="text-center">{{item.title}}</h4>
                         <div class="ga-border"></div>
                         <p class="text-muted text-center"><small>{{item.description}}</small></p>
                     </div>

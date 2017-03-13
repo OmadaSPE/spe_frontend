@@ -6,15 +6,27 @@
                 <div class="lib-panel">
                     <div class="row box-shadow">
                         <div class="col-md-4 no-pad">
-                            <img class="lib-img-show" :src="'resources/'+item.media_id+'.jpg'">
+                            <img class="lib-img-show" :src="'http://museums.bristol.gov.uk/multimedia/entry.php?request=resource&width=400&format=jpeg&irn='+item.media_id">
                         </div>
                         <div class="col-md-8">
                             <div class="lib-row lib-header">
-                                {{item.description}}
+                                {{item.title}}
                                 <div class="lib-header-seperator"></div>
                             </div>
-                            <div class="lib-row lib-desc">
-
+                            <div class="lib-row lib-desc" v-if="item.description">
+                                {{item.description}}
+                            </div>
+                            <div class="lib-row lib-desc" v-if="item.subjects">
+                                Subjects
+                                {{item.subjects}}
+                            </div>
+                            <div class="lib-row lib-desc" v-if="item.department">
+                                Department
+                                {{item.department}}
+                            </div>
+                            <div class="lib-row lib-desc" v-if="item.notes">
+                                Notes
+                                {{item.notes}}
                             </div>
                         </div>
                     </div>
@@ -34,8 +46,8 @@
             </div>
         </div>
 
-        <a href="" class="btn btn-lg btn-primary"><span class=""></span> Edit</a>
-        <a href="" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-cloud-download"></span> Download</a>
+        <!-- <a href="" class="btn btn-lg btn-primary"><span class=""></span> Edit</a> -->
+        <a download :href="'http://museums.bristol.gov.uk/multimedia/entry.php?request=resource&width=400&irn='+item.media_id" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-cloud-download"></span Download</a>
     </template>
 
     <div class="loading-item" v-else>
