@@ -162,7 +162,10 @@
     <div class="row">
         <!-- Results Container -->
         <div class="portfolioContainer">
-            <template v-if="results">
+            <div class="no-results" v-if="results.length < 1">
+                <h3>No Results</h3>
+            </div>
+            <template v-else>
                 <div class=" col-md-3 webdesign illustrator" v-for="item in results">
                     <div class="gal-detail thumb">
                         <router-link :to="'item/'+item.id" class="image-popup" title="Screenshot-1">
@@ -173,18 +176,12 @@
                         <p class="text-muted text-center"><small>{{item.description}}</small></p>
                     </div>
                 </div>
-                <div class="no-results" v-if="results.length < 1">
-                    <h3>No Results</h3>
-                </div>
             </template>
-            <div class="loading-results" v-else>
-                <h3>Loading...</h3>
-            </div>
         </div>
     </div>
     <div class="row gallery-bottom">
         <div class="center-block">
-            <ul class="pagination">
+            <!-- <ul class="pagination">
                 <li>
                     <a href="#" aria-label="Previous">
                         <span aria-hidden="true">«</span>
@@ -198,7 +195,11 @@
                         <span aria-hidden="true">»</span>
                     </a>
                 </li>
-            </ul>
+            </ul> -->
+            <div class="loading-results" v-if="loading">
+                <h3>Loading...</h3>
+            </div>
+            <button class="btn btn-primary btn-lg" @click="getMore" v-if="more && !loading">More</button>
         </div>
     </div>
 </div>

@@ -10,3 +10,14 @@
     float: none;
     text-align: center;
 }
+
+.Results
+.gallery-bottom {
+    padding: 50px;
+}
+
+.Results
+.gallery-bottom
+button {
+    padding: 20px 80px;
+}

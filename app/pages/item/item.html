@@ -14,18 +14,19 @@
                                 <div class="lib-header-seperator"></div>
                             </div>
                             <div class="lib-row lib-desc" v-if="item.description">
+                                <span>Description</span>
                                 {{item.description}}
                             </div>
                             <div class="lib-row lib-desc" v-if="item.subjects">
-                                Subjects
+                                <span>Subjects</span>
                                 {{item.subjects}}
                             </div>
                             <div class="lib-row lib-desc" v-if="item.department">
-                                Department
+                                <span>Department</span>
                                 {{item.department}}
                             </div>
                             <div class="lib-row lib-desc" v-if="item.notes">
-                                Notes
+                                <span>Notes</span>
                                 {{item.notes}}
                             </div>
                         </div>

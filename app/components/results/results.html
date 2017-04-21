@@ -4,4 +4,5 @@
     <template v-for="item in results">
         <image-thumb :item.sync="item"></image-thumb>
     </template>
+    <button @click="getMore" v-if="more?"></button>
 </div>

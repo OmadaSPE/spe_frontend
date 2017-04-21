@@ -19,7 +19,6 @@ export default Vue.extend({
         Object.assign(this, this.$route.params);
         this.$http.get(`http://localhost:3000/images/${this.id}`).then((results)=>{
             this.item = results.body;
-            console.log(this.item.description);
         });
     },
     mounted(){

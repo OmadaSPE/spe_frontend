@@ -6,10 +6,12 @@ export default Vue.extend({
     template: tmpl,
     data(){
         return {
-            results: null,
-            pages: 1,
-            current_page: 1,
-            q: ""
+            results: [],
+            page: 0,
+            q: "",
+            loading: true,
+            more: false,
+            query: ""
         }
     },
     created(){
@@ -19,24 +21,32 @@ export default Vue.extend({
             if(this.title) str += `&title=${this.title}`;
             if(this.mimeformat) str += `&format=${this.mimeformat}`;
             if(this.department) str += `&department=${this.department}`;
-            if(this.description) str += `&notes=${this.description}`;
+            if(this.description) str += `&description=${this.description}`;
             if(this.taxonomy) str += `&taxonomy=${this.taxonomy}`;
             if(this.subjects) str += `&subjects=${this.subjects}`;
             if(this.notes) str += `&notes=${this.notes}`;
-            this.$http.get(`http://localhost:3000/images/advanced?${str}`).then((results)=>{
-                this.results = results.body;
-            });
-            this.q = 'Advanced'
+            this.loading = true;
+            this.query = `http://localhost:3000/images/advanced?${str}`;
+            this.q = 'Advanced';
+            this.getMore();
+
         }
         else if(this.q.length < 1){
             this.$router.go(-1);
         } else {
-            this.$http.get(`http://localhost:3000/images/query?q=${this.q}`).then((results)=>{
-                this.results = results.body;
+            this.query = `http://localhost:3000/images/query?q=${this.q}`
+            this.getMore();
+        }
+    },
+    methods: {
+        getMore(){
+            this.$http.get(this.query+`&page=${this.page}`).then((results)=>{
+                this.results = this.results.concat(results.body);
+                this.more = results.body.length === 20;
+                this.loading = false;
+                this.page++;
             });
         }
-
-
     },
     mounted(){
         this.$bus.$emit('show-nav');
